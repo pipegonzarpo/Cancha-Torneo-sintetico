@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Groups:</strong>
+  <%= @torneo_apartura.groups %>
+</p>
+
+<p>
+  <strong>Teams:</strong>
+  <%= @torneo_apartura.teams %>
+</p>
+
+<%= link_to 'Edit', edit_torneo_apartura_path(@torneo_apartura) %> |
+<%= link_to 'Back', torneo_aparturas_path %>
