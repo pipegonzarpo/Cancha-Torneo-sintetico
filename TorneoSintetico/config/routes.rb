@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  resources :matches
   resources :players
   get 'welcome/index'
 
   resources :teams
-  resources :torneo_aparturas
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
   get '/generate_teams' => 'teams#generate_teams'
